@@ -1,0 +1,42 @@
+.container{
+    display: grid;
+    grid-template-columns: minmax(250px, 300px) minmax(500px, 1fr) minmax(250px, 300px);
+    grid-template-rows: 50px 80px 250px  minmax(250px, 1fr);
+}
+
+.sidebar{
+    grid-column: 1/2;
+    grid-row:1/5;
+    background-color: skyblue;
+}
+
+.navbar{
+    grid-column: 2/4;
+    background-color: lightgreen;
+    grid-row:1;
+}
+
+.header{
+    grid-column: 2/4;
+    grid-row:2;
+    background-color: lightpink;
+}
+
+
+.projects{
+    grid-column: 2;
+    grid-row:3/5;
+    background-color: lightgray;
+}
+
+.announcements{
+    grid-column: 3;
+    grid-row:3;
+    background-color: lightseagreen;
+}
+
+.trending{
+    grid-column: 3;
+    grid-row:4;
+    background-color: lightsteelblue;
+}
