@@ -3,12 +3,16 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+    font-size: 1.4rem;
+    padding: 30px 0  15px 0;
+}
 
 
 .container{
     display: grid;
-    grid-template-columns: 300px minmax(500px, 1fr) minmax(250px, 300px);
-    grid-template-rows: auto auto 250px  minmax(250px, 1fr);
+    grid-template-columns: 300px minmax(500px, 1fr)  350px;
+    grid-template-rows: auto auto auto  minmax(250px, 1fr);
     background-color: rgb(235, 235, 235);
 }
 
@@ -151,6 +155,12 @@
 .projects{
     grid-column: 2;
     grid-row:3/5;
+    padding: 0 30px 30px 30px;
+}
+.projects .project-wrap{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 
@@ -158,6 +168,26 @@
 .announcements{
     grid-column: 3;
     grid-row:3;
+    padding-right: 30px;
+}
+
+.ann-wrap{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    gap:10px;
+} 
+.announcements .ann h5{
+    font-size: 1rem ;
+    margin-bottom: 5px;
+}
+.announcements .ann p{
+    font-size: 0.9rem;
+    color: rgb(59, 59, 59);
+}
+.announcements hr{
+    border-top: 1px solid rgba(59, 59, 59, 0.6);
 }
 
 
@@ -165,4 +195,35 @@
 .trending{
     grid-column: 3;
     grid-row:4;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.trending .trending-wrap{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    gap:20px;
+}
+
+.trending .trend-item{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 18px 18px;
+    column-gap: 20px;
+    row-gap: 4px;
+    align-items: center;
+}
+
+.trending .trend-item img{
+    grid-row: 1/3;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(79, 79, 79);   /*remove after adding profile images*/
+}
+
+.trending .trend-item .trend{
+    font-size: 0.9rem;
+    color: rgb(59, 59, 59);
 }
