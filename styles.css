@@ -69,7 +69,6 @@ h1{
     align-items: center;
     padding: 20px 80px 20px 40px;
     background-color: white;
-
 }
 
 .navbar input{
@@ -90,7 +89,7 @@ h1{
 
 
 
-/* Header designing */
+/* Header Designing */
 .header{
     grid-column: 2/4;
     grid-row:2;
@@ -125,7 +124,6 @@ h1{
     font-size: 1rem;
 }
 
-
 /*for positioning items in header grid*/
 .header .greet{
     grid-column: 2/3;
@@ -157,26 +155,56 @@ h1{
     grid-row:3/5;
     padding: 0 30px 30px 30px;
 }
+
 .projects .project-wrap{
-    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:30px;
+}
+
+/* Project card Design */
+.project-card{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 5px;
+    height: 160px;
     padding: 30px;
-    border-radius: 10px;
+    background-color: white;
+    border-left: 8px rgb(221, 188, 0) solid;
+    border-radius: 8px;
+}
+.project-card .project-actions{
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 20px;
+    justify-content: end;
+}
+.project-card img{
+    height: 1.6rem;
+    width: auto;
+}
+.project-card h3{
+    font-size: 1.2rem;
+}
+.project-card .about-project{
+    color: rgb(59, 59, 59);
+
 }
 
 
 
+/* announcements designing */
 .announcements{
     grid-column: 3;
     grid-row:3;
     padding-right: 30px;
 }
-
 .ann-wrap{
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     display: grid;
-    gap:10px;
+    gap:15px;
 } 
 .announcements .ann h5{
     font-size: 1rem ;
@@ -192,6 +220,7 @@ h1{
 
 
 
+/* Trending Designing */
 .trending{
     grid-column: 3;
     grid-row:4;
@@ -224,6 +253,5 @@ h1{
 }
 
 .trending .trend-item .trend{
-    font-size: 0.9rem;
     color: rgb(59, 59, 59);
 }
