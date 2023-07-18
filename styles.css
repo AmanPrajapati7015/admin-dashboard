@@ -151,7 +151,7 @@ h1{
 
 
 .projects{
-    grid-column: 2;
+    grid-column: 2/3;
     grid-row:3/5;
     padding: 0 30px 30px 30px;
 }
@@ -173,7 +173,6 @@ h1{
     border-left: 8px rgb(221, 188, 0) solid;
     border-radius: 8px;
     box-shadow: 4px 4px 4px grey;
-
 }
 .project-card .project-actions{
     display: grid;
@@ -284,4 +283,18 @@ h1{
     cursor: pointer;
     border-radius: 100%;
     background-color: rgb(229, 229, 229);
+}
+
+
+
+@media all and (max-width: 1350px){
+    div.sidebar{
+        display: none;
+    }
+    div.navbar,
+    div.header,
+    div.projects{
+        grid-column-start: 1;
+    }
+
 }
